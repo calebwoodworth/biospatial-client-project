@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - biospatial</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contact - Biospatial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
         <nav>
@@ -15,86 +13,32 @@
                 <li><a href="client.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="intro">
-            <h1>Need Help?</h1>
-            <p>At biospatial, we’re committed to ensuring you get the most out of our powerful data solutions. Whether you need technical assistance, troubleshooting, or guidance on optimizing your use of our platform, our support team is here to help.</p>
-        </section>
-
-        <section class="how-can-we-assist">
-            <h2>How Can We Assist You?</h2>
-            <ul>
-                <li><strong>🔹 biospatial Analytics</strong> – Get expert support for data analysis, visualization, and reporting to maximize the value of your EMS insights.</li>
-                <li><strong>🔹 biospatial EMS Repository</strong> – Need help accessing or managing your EMS data? Our team can assist with troubleshooting, integrations, and system optimizations.</li>
-                <li><strong>🔹 biospatial Patient Registry</strong> – Ensure seamless patient tracking with our support team’s guidance on data entry, reporting, and interoperability.</li>
-                <li><strong>🔹 biospatial Navigate for Hospitals and Health Systems</strong> – Get help utilizing our strategic market intelligence tools to optimize facility placement and service expansion.</li>
-                <li><strong>🔹 biospatial Discover for Behavioral Health</strong> – Need assistance interpreting prehospital data for behavioral health trends? We’re here to help you make informed decisions.</li>
-            </ul>
-        </section>
-
         <section class="contact-form">
-            <h2>Contact Us</h2>
-            <p>If you need assistance or have any questions, please reach out to us using the form below. Our team will get back to you as soon as possible.</p>
+            <h1>Contact Us</h1>
+            <form action="/submit_form" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <form action="#" method="post">
-                <label for="first-name">First Name*</label>
-                <input type="text" id="first-name" name="first-name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-                <label for="last-name">Last Name*</label>
-                <input type="text" id="last-name" name="last-name" required>
-
-                <label for="work-email">Work Email*</label>
-                <input type="email" id="work-email" name="work-email" required>
-
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone">
-
-                <label for="job-title">Job Title*</label>
-                <input type="text" id="job-title" name="job-title" required>
-
-                <label for="company">Company/Organization*</label>
-                <input type="text" id="company" name="company" required>
-
-                <label for="product-area">Product Area*</label>
-                <select id="product-area" name="product-area" required>
-                    <option value="">Please Select</option>
-                    <option value="biospatial-analytics">biospatial Analytics</option>
-                    <option value="biospatial-ems-repository">biospatial EMS Repository</option>
-                    <option value="biospatial-patient-registry">biospatial Patient Registry</option>
-                    <option value="biospatial-navigate">biospatial Navigate for Hospitals and Health Systems</option>
-                    <option value="biospatial-discover">biospatial Discover for Behavioral Health</option>
-                </select>
-
-                <label for="priority">Priority*</label>
-                <select id="priority" name="priority" required>
-                    <option value="">Please Select</option>
-                    <option value="low">Low</option>
-                    <option value="medium">Medium</option>
-                    <option value="high">High</option>
-                </select>
-
-                <label for="comments">Comments*</label>
-                <textarea id="comments" name="comments" rows="4" required></textarea>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
 
                 <button type="submit">Submit</button>
             </form>
         </section>
-
-        <section class="address">
-            <h2>Our Location</h2>
-            <p>4819 Emperor Blvd, Suite 400, Durham, NC 27703</p>
-        </section>
-
     </main>
 
     <footer>
-        <p>&copy; 2025 biospatial. All rights reserved.</p>
+        <p>&copy; 2025 Biospatial Healthcare. All rights reserved.</p>
     </footer>
 </body>
-
 </html>
