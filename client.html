@@ -1,53 +1,31 @@
+/* client.html (Home Page) */
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biospatial</title>
+    <title>Home - Biospatial Healthcare</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <h1>Biospatial</h1>
+        <h1>Welcome to Biospatial Healthcare</h1>
         <nav>
             <ul>
                 <li><a href="client.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Home Page -->
-    <section id="home">
-        <h2>Welcome to Biospatial</h2>
-        <p>Your partner in innovative geospatial data analytics.</p>
-        <div class="carousel">
-            <div class="carousel-item">Service 1</div>
-            <div class="carousel-item">Service 2</div>
-            <div class="carousel-item">Service 3</div>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
+    <main>
+        <p>Providing top-notch healthcare solutions in Raleigh-Durham.</p>
+    </main>
     <footer>
-        <p>&copy; 2025 Biospatial. All rights reserved.</p>
+        <p>&copy; 2025 Biospatial Healthcare. All rights reserved.</p>
     </footer>
-
-    <script>
-        // Simple carousel functionality
-        let currentIndex = 0;
-        const items = document.querySelectorAll('.carousel-item');
-        function showNextItem() {
-            items[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex + 1) % items.length;
-            items[currentIndex].classList.add('active');
-        }
-        setInterval(showNextItem, 3000);  // Change slide every 3 seconds
-    </script>
 </body>
 </html>
