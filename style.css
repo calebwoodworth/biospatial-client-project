@@ -18,3 +18,7 @@ nav ul li {
     display: inline;
     margin-right: 10px;
 }
+img {
+    width: 30%; /* Adjust the percentage as needed */
+    height: auto;
+}
