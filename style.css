@@ -108,7 +108,7 @@ body {
  
  .image-gallery {
    display: flex;
-   justify-content: center; /* Center images horizontally */
+   justify-content: center; 
    gap: 20px;
 }
 
