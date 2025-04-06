@@ -120,12 +120,12 @@ body {
 
 .image-index {
    display: flex;
-   justify-content: center; 
-   gap: 20px;
+   justify-content: left; 
+   gap: 10px;
 }
 
 .image-index image {
-   max-width: 30%;
+   max-width: 20%;
    height: auto;
    display: block;
 }
