@@ -125,7 +125,7 @@ body {
 }
 
 .image-index image {
-   max-width: 20%;
+   max-width: 10%;
    height: auto;
    display: block;
 }
