@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contact - Biospatial</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+       <nav>
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="services.html">Services</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="contact.html" class="active">Contact</a></li>
+           </ul>
+       </nav>
+   </header>
+
+
+   <main>
+       <section class="contact-form">
+           <h1>Contact Us</h1>
+           <form action="/submit_form" method="POST">
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="name" required>
+
+
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" required>
+
+
+               <label for="message">Message:</label>
+               <textarea id="message" name="message" required></textarea>
+
+
+               <button type="submit">Submit</button>
+           </form>
+       </section>
+   </main>
+
+
+   <footer>
+       <p>&copy; 2025 Biospatial Healthcare. All rights reserved.</p>
+   </footer>
+</body>
+</html>
+
+
+
+
+script.js
+
+document.addEventListener("DOMContentLoaded", function () {
+   const navLinks = document.querySelectorAll("nav ul li a");
+   navLinks.forEach(link => {
+       link.addEventListener("click", function () {
+           navLinks.forEach(link => link.classList.remove("active"));
+           this.classList.add("active");
+       });
+   });
+});
+
+
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.querySelector("nav ul");
+
+
+if (menuToggle) {
+   menuToggle.addEventListener("click", function () {
+       navMenu.classList.toggle("active");
+   });
+}
