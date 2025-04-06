@@ -106,13 +106,25 @@ body {
  }
  
  
- .image-gallery {
+.image-gallery {
    display: flex;
    justify-content: center; 
    gap: 20px;
 }
 
 .image-gallery img {
+   max-width: 30%;
+   height: auto;
+   display: block;
+}
+
+.image-index {
+   display: flex;
+   justify-content: center; 
+   gap: 20px;
+}
+
+.image-index image {
    max-width: 30%;
    height: auto;
    display: block;
