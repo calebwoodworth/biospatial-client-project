@@ -111,10 +111,3 @@ body {
    justify-content: center; /* Center images horizontally */
    gap: 20px;
 }
-
-.image-gallery img {
-   max-width: 30%;
-   height: auto;
-   display: block;
-}
- 
