@@ -1,132 +1,126 @@
+/* Basic body styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
- }
- 
- 
- header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
- }
- 
- 
- header h1 {
-    margin: 0;
-    text-align: center;
- }
- 
- 
- nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
- }
- 
- 
- nav ul li {
-    display: inline;
-    margin: 0 15px;
- }
- 
- 
- nav ul li a {
-    color: white;
-    text-decoration: none;
- }
- 
- 
- nav ul li a.active {
-    text-decoration: underline;
- }
- 
- 
- footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
- }
- 
- 
- main {
-    padding: 20px;
- }
- 
- 
- .hero {
-    background: #005B96;
-    color: white;
-    padding: 40px 0;
-    text-align: center;
- }
- 
- 
- section {
-    margin: 20px 0;
- }
- 
- 
- ul {
-    padding-left: 20px;
- }
- 
- 
- form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto;
- }
- 
- 
- form label {
-    margin: 10px 0 5px;
- }
- 
- 
- form input, form textarea, form button {
-    padding: 10px;
-    margin-bottom: 15px;
- }
- 
- 
- form button {
-    background-color: #005B96;
-    color: white;
-    border: none;
-    cursor: pointer;
- }
- 
- 
- form button:hover {
-    background-color: #004080;
- }
- 
- 
+   font-family: Arial, sans-serif; /* Sets the font family for the entire page */
+   margin: 0; /* Removes default margin */
+   padding: 0; /* Removes default padding */
+   background-color: #f4f4f4; /* Light gray background color */
+}
+
+/* Header styles */
+header {
+   background-color: #333; /* Dark background color for the header */
+   color: white; /* White text color */
+   padding: 20px; /* Padding around the header */
+}
+
+header h1 {
+   margin: 0; /* Removes default margin */
+   text-align: center; /* Centers the header text */
+}
+
+/* Navigation styles */
+nav ul {
+   list-style: none; /* Removes the default list styling */
+   padding: 0; /* Removes default padding */
+   text-align: center; /* Centers the navigation links */
+}
+
+nav ul li {
+   display: inline; /* Displays list items in a row */
+   margin: 0 15px; /* Adds space between the list items */
+}
+
+nav ul li a {
+   color: white; /* White text color for links */
+   text-decoration: none; /* Removes underline from links */
+}
+
+nav ul li a.active {
+   text-decoration: underline; /* Underlines the active link */
+}
+
+/* Footer styles */
+footer {
+   text-align: center; /* Centers the footer content */
+   padding: 20px; /* Adds padding around the footer */
+   background-color: #333; /* Dark background for the footer */
+   color: white; /* White text color */
+}
+
+/* Main content area */
+main {
+   padding: 20px; /* Adds padding around the main content */
+}
+
+/* Hero section styles */
+.hero {
+   background: #005B96; /* Blue background color for hero section */
+   color: white; /* White text color */
+   padding: 40px 0; /* Padding on top and bottom */
+   text-align: center; /* Centers the content */
+}
+
+/* General section styles */
+section {
+   margin: 20px 0; /* Adds vertical margin between sections */
+}
+
+/* List styles */
+ul {
+   padding-left: 20px; /* Adds padding to the left of unordered lists */
+}
+
+/* Form styles */
+form {
+   display: flex; /* Uses flexbox for the form layout */
+   flex-direction: column; /* Stacks the form elements vertically */
+   max-width: 500px; /* Limits the form's width */
+   margin: 0 auto; /* Centers the form */
+}
+
+form label {
+   margin: 10px 0 5px; /* Adds space around the labels */
+}
+
+form input, form textarea, form button {
+   padding: 10px; /* Adds padding inside input, textarea, and button */
+   margin-bottom: 15px; /* Adds space below each input, textarea, and button */
+}
+
+/* Button styles */
+form button {
+   background-color: #005B96; /* Blue background color for the button */
+   color: white; /* White text color */
+   border: none; /* Removes border from the button */
+   cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+form button:hover {
+   background-color: #004080; /* Darker blue background on hover */
+}
+
+/* Image gallery styles */
 .image-gallery {
-   display: flex;
-   justify-content: center; 
-   gap: 20px;
+  display: flex; /* Uses flexbox for the image gallery layout */
+  justify-content: center; /* Centers the images horizontally */
+  gap: 20px; /* Adds space between images */
 }
 
 .image-gallery img {
-   max-width: 30%;
-   height: auto;
-   display: block;
+  max-width: 30%; /* Limits the width of each image */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes bottom space in images */
 }
 
+/* Image index section styles */
 .image-index {
-   display: flex;
-   justify-content: left; 
-   gap: 10px;
+  display: flex; /* Uses flexbox for the image index layout */
+  justify-content: left; /* Aligns the images to the left */
+  gap: 10px; /* Adds space between images */
 }
 
 .image-index img {  
-   max-width: 50%; 
-   height: auto;
-   display: block;
+  max-width: 50%; /* Limits the width of the images */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes bottom space in images */
 }
- 
