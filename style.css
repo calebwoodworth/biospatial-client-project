@@ -124,8 +124,8 @@ body {
    gap: 10px;
 }
 
-.image-index image {
-   max-width: 10%;
+.image-index img {  
+   max-width: 50%; 
    height: auto;
    display: block;
 }
