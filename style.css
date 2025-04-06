@@ -106,8 +106,8 @@ body {
  }
  
  
- img {
-    max-width: 30%;
+ .image-gallery {
+    max-width: 70%;
     height: auto;
     display: block;
  }
